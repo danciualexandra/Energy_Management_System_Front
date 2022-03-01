@@ -1,0 +1,31 @@
+<div  class="clientForm">
+  <form [formGroup]="registerForm" (submit)="register()" class="mat-group">
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>username</mat-label>
+      <input matInput formControlName="username" required minlength="4" maxlength="50">
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>password</mat-label>
+      <input type="password" matInput formControlName="password" required minlength="4" maxlength="50">
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>firstname</mat-label>
+      <input matInput formControlName="firstname" required>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>lastname</mat-label>
+      <input matInput formControlName="lastname" required>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>address</mat-label>
+      <input matInput formControlName="address" required>
+    </mat-form-field>
+
+
+    <button mat-raised-button type="submit">Add Client
+      <mat-icon>person_add</mat-icon>
+    </button>
+
+  </form>
+
+</div>

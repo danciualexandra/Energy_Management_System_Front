@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Update client</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Sensor description</mat-label>
+    <input matInput [(ngModel)]="data.sensorDescription">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Max value</mat-label>
+    <input matInput [(ngModel)]="data.maxValue">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+  <button mat-button (click)="updateSensor()">Update</button>
+</div>
